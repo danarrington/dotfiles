@@ -16,6 +16,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-rails'
 Plugin 'slim-template/vim-slim'
+Plugin 'thoughtbot/vim-rspec'
 
 call vundle#end()
 filetype plugin indent on
@@ -53,7 +54,7 @@ set softtabstop=2
 "line Numbers PWN!
 set number
 
-"vim color scheme is effed up with 8 colors, use 256
+"vim color scheme is messed up with 8 colors, use 256
 let &t_Co=256
 
 "set up ctrl+p
@@ -68,9 +69,29 @@ runtime macros/matchit.vim
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 map <C-n> :NERDTreeToggle<CR>
+
+" Space as leader
 nnoremap <SPACE> <Nop>
 let mapleader=" "
+
 " leader-e to edit in current dir
 map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
-" quick save
+
+" quick save/quit
 noremap <Leader>s :update<CR>
+noremap <Leader>q :q<CR>
+
+" vim-rspec mappings
+nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
+nnoremap <Leader>r :call RunNearestSpec()<CR>
+nnoremap <Leader>l :call RunLastSpec()<CR>
+
+" Open new split panes to right and bottom, which feels more natural
+set splitbelow
+set splitright
+
+" Quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
