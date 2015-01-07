@@ -68,6 +68,9 @@ let g:ctrlp_use_caching = 0
 "enable matchit
 runtime macros/matchit.vim
 
+" use ack instead of grep
+set grepprg=ack
+
 " Custom mapping
 vmap <Tab> >gv
 vmap <S-Tab> <gv
