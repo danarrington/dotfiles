@@ -50,6 +50,9 @@ set smarttab
 set shiftwidth=2
 set softtabstop=2
 
+" Make it obvious where 80 characters is
+set textwidth=80
+set colorcolumn=+1
 
 "line Numbers PWN!
 set number
