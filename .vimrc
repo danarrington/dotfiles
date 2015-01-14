@@ -17,6 +17,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-rails'
 Plugin 'slim-template/vim-slim'
 Plugin 'thoughtbot/vim-rspec'
+Plugin 'tpope/vim-unimpaired'
 
 call vundle#end()
 filetype plugin indent on
@@ -70,6 +71,10 @@ runtime macros/matchit.vim
 
 " use ack instead of grep
 set grepprg=ack
+
+" always show current file in status line
+set statusline+=%F
+set laststatus=2
 
 " Custom mapping
 vmap <Tab> >gv
