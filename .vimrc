@@ -18,6 +18,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'slim-template/vim-slim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'othree/html5.vim'
 
 call vundle#end()
 filetype plugin indent on
