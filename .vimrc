@@ -19,6 +19,7 @@ Plugin 'slim-template/vim-slim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'othree/html5.vim'
+Plugin 'tpope/vim-eunuch'
 
 call vundle#end()
 filetype plugin indent on
@@ -38,8 +39,9 @@ set lazyredraw
 set showmode
 
 " Set default color scheme
-colorscheme darcula
+" colorscheme darcula
 " colorscheme vividchalk
+colorscheme sorcerer
 
 " Who doesn't like autoindent?
 set autoindent
