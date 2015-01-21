@@ -76,7 +76,7 @@ runtime macros/matchit.vim
 set grepprg=ack
 
 " always show current file in status line
-set statusline+=%F
+set statusline=[%n]\ %<%f%h%m
 set laststatus=2
 
 " Custom mapping
