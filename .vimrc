@@ -20,6 +20,7 @@ Plugin 'thoughtbot/vim-rspec'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'othree/html5.vim'
 Plugin 'tpope/vim-eunuch'
+Plugin 'mileszs/ack.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -90,6 +91,9 @@ let mapleader=" "
 
 " leader-e to edit in current dir
 map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+
+" leader-a to :Ack! --ruby
+map <Leader>a :Ack! --ruby 
 
 " quick save/quit
 noremap <Leader>s :update<CR>
