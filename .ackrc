@@ -1,2 +1,4 @@
 --type-add
 ruby=slim
+
+--ignore-dir=log
