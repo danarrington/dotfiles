@@ -95,6 +95,9 @@ map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 " leader-a to :Ack! --ruby
 map <Leader>a :Ack! --ruby 
 
+" leader-c closes quickfix window
+noremap <Leader>c :ccl<CR>
+
 " quick save/quit
 noremap <Leader>s :update<CR>
 noremap <Leader>q :q<CR>
