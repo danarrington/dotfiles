@@ -21,6 +21,8 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'othree/html5.vim'
 Plugin 'tpope/vim-eunuch'
 Plugin 'mileszs/ack.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()
 filetype plugin indent on
