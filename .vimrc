@@ -108,7 +108,7 @@ noremap <Leader>q :q<CR>
 nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
 nnoremap <Leader>r :call RunNearestSpec()<CR>
 nnoremap <Leader>l :call RunLastSpec()<CR>
-let g:rspec_command = "!bundle exec rspec {spec}"
+let g:rspec_command = "!bundle exec rspec -I . {spec}"
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
