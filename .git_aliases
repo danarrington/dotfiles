@@ -1,0 +1,5 @@
+[alias]
+	l = log --graph --all --format=\"%C(yellow)%h%Cgreen%d %Cred%an %Creset%s %Cgreen%ar\"
+        ec = config --global -e
+        co = checkout
+        st = status --short --branch
