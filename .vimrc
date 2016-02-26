@@ -23,6 +23,9 @@ Plugin 'tpope/vim-eunuch'
 Plugin 'mileszs/ack.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 filetype plugin indent on
@@ -45,6 +48,9 @@ set showmode
 " colorscheme darcula
 " colorscheme vividchalk
 colorscheme sorcerer
+let g:airline_theme='ubaryd'
+" enable powerline symbols
+" let g:airline_powerline_fonts = 1
 
 " Who doesn't like autoindent?
 set autoindent
