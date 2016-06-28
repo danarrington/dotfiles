@@ -2,3 +2,4 @@
 ruby=slim
 
 --ignore-dir=log
+--ignore-dir=tmp/cache
