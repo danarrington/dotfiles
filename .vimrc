@@ -23,6 +23,7 @@ Plugin 'tpope/vim-eunuch'
 Plugin 'mileszs/ack.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'isRuslan/vim-es6'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
@@ -65,7 +66,7 @@ set softtabstop=2
 
 " Make it obvious where 80 characters is
 " set textwidth=80
-set colorcolumn=80
+set colorcolumn=100
 
 "line Numbers PWN!
 set number
@@ -100,8 +101,9 @@ let mapleader=" "
 " leader-e to edit in current dir
 map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
-" leader-a to :Ack! --ruby
-map <Leader>a :Ack! --ruby 
+" leader-a to :Ack!
+map <Leader>a :Ack!
+map <Leader>b :Ack! --ruby 
 
 " leader-c closes quickfix window
 noremap <Leader>c :ccl<CR>
