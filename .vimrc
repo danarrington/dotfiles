@@ -102,7 +102,7 @@ let mapleader=" "
 map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
 " leader-a to :Ack!
-map <Leader>a :Ack!
+map <Leader>a :Ack! 
 map <Leader>b :Ack! --ruby 
 
 " leader-c closes quickfix window
