@@ -49,6 +49,7 @@ set showmode
 " colorscheme darcula
 " colorscheme vividchalk
 colorscheme sorcerer
+" colorscheme cake
 let g:airline_theme='ubaryd'
 " enable powerline symbols
 " let g:airline_powerline_fonts = 1
@@ -67,7 +68,6 @@ set softtabstop=2
 " Make it obvious where 80 characters is
 " set textwidth=80
 set colorcolumn=100
-
 "line Numbers PWN!
 set number
 
