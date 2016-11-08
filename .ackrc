@@ -4,4 +4,5 @@ ruby=slim
 js=jsx
 
 --ignore-dir=log
---ignore-dir=tmp/cache
+--ignore-dir=tmp
+--ignore-dir=coverage
