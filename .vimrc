@@ -27,6 +27,7 @@ Plugin 'isRuslan/vim-es6'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
+Plugin 'lambdatoast/elm.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -127,3 +128,15 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
+
+function! TogglePaste()
+        if(&paste == 0)
+                set paste
+                echo "Paste Mode Enabled"
+        else
+                set nopaste
+                echo "Paste Mode Disabled"
+        endif
+endfunction
+
+map <leader>p :call TogglePaste()<CR>
