@@ -119,6 +119,10 @@ nnoremap <Leader>r :call RunNearestSpec()<CR>
 nnoremap <Leader>l :call RunLastSpec()<CR>
 let g:rspec_command = "!bundle exec rspec -I . {spec}"
 
+" next/previous quickfix mappings
+noremap <Leader>n :cnext<CR>
+noremap <Leader>p :cprev<CR>
+
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
 set splitright
