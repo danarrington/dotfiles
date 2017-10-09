@@ -6,3 +6,4 @@ js=jsx
 --ignore-dir=log
 --ignore-dir=tmp
 --ignore-dir=coverage
+--ignore-file=is:.byebug_history
