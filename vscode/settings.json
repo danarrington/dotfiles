@@ -1,12 +1,19 @@
 {
-    "go.formatTool": "goimports",
-    "go.gopath": "/Users/Dan/go",
+    "window.zoomLevel": 1,
     "vim.disableAnnoyingNeovimMessage": true,
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": true,
+    "go.formatTool": "goimports",
+    //"go.gopath": "/Users/danarrington/code/services/go",
+    "go.inferGopath": true,
+    "go.toolsGopath": "/Users/danarrington/go",
     "vim.leader": "<space>",
     "vim.otherModesKeyBindingsNonRecursive": [
         {
-            "before":["<C-n>"],
-            "after":[],
+            "before": [
+                "<C-n>"
+            ],
+            "after": [],
             "commands": [
                 {
                     "command": ":nohl",
@@ -15,7 +22,10 @@
             ]
         },
         {
-            "before": ["leader", "s"],
+            "before": [
+                "leader",
+                "s"
+            ],
             "after": [],
             "commands": [
                 {
@@ -25,7 +35,9 @@
             ]
         },
         {
-            "before": ["<C-h>"],
+            "before": [
+                "<C-h>"
+            ],
             "after": [],
             "commands": [
                 {
@@ -35,7 +47,9 @@
             ]
         },
         {
-            "before": ["<C-l>"],
+            "before": [
+                "<C-l>"
+            ],
             "after": [],
             "commands": [
                 {
@@ -45,7 +59,10 @@
             ]
         },
         {
-            "before": ["leader", "t"],
+            "before": [
+                "leader",
+                "t"
+            ],
             "after": [],
             "commands": [
                 {
@@ -55,14 +72,48 @@
             ]
         },
         {
-            "before": ["leader", "l"],
+            "before": [
+                "leader",
+                "<enter>"
+            ],
             "after": [],
             "commands": [
                 {
-                    "command": "go.test.previous",
+                    "command": "editor.action.goToDeclaration",
                     "args": []
                 }
             ]
+        },
+        {
+            "before": [
+                "S-Tab"
+            ],
+            "after": [
+                "<",
+                "g",
+                "v"
+            ]
+        },
+        {
+            "before": [
+                "Tab"
+            ],
+            "after": [
+                ">",
+                "g",
+                "v"
+            ]
         }
-    ]
+    ],
+    "extensions.ignoreRecommendations": false,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    }
 }
