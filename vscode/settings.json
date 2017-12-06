@@ -1,0 +1,68 @@
+{
+    "go.formatTool": "goimports",
+    "go.gopath": "/Users/Dan/go",
+    "vim.disableAnnoyingNeovimMessage": true,
+    "vim.leader": "<space>",
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before":["<C-n>"],
+            "after":[],
+            "commands": [
+                {
+                    "command": ":nohl",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": ["leader", "s"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": ["<C-h>"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.previousEditor",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": ["<C-l>"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.nextEditor",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": ["leader", "t"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "go.test.cursor",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": ["leader", "l"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "go.test.previous",
+                    "args": []
+                }
+            ]
+        }
+    ]
+}
