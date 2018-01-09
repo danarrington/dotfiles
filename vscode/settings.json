@@ -2,11 +2,13 @@
     "window.zoomLevel": 1,
     "vim.disableAnnoyingNeovimMessage": true,
     "editor.formatOnSave": true,
-    "editor.minimap.enabled": true,
+    "editor.minimap.enabled": false,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
     "go.formatTool": "goimports",
     //"go.gopath": "/Users/danarrington/code/services/go",
-    "go.inferGopath": true,
     "go.toolsGopath": "/Users/danarrington/go",
+    "go.inferGopath": true,
     "vim.leader": "<space>",
     "vim.otherModesKeyBindingsNonRecursive": [
         {
@@ -115,5 +117,6 @@
         "suppressNoRepositoryWarning": false,
         "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
-    }
+    },
+    "workbench.panel.location": "bottom"
 }
