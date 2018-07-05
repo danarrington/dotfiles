@@ -1,35 +1,32 @@
 " Forget being compatible with good ol' vi
 set nocompatible
 
-" Setup vundle
-filetype off
-set rtp+=~/.vim/Vundle.vim
-call vundle#begin()
+" Setup vim-plug
+call plug#begin()
 
-Plugin 'gmarik/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'kien/ctrlp.vim'
-Plugin 'tpope/vim-rails'
-Plugin 'slim-template/vim-slim'
-Plugin 'thoughtbot/vim-rspec'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'othree/html5.vim'
-Plugin 'tpope/vim-eunuch'
-Plugin 'mileszs/ack.vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'isRuslan/vim-es6'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'tpope/vim-fugitive'
-Plugin 'lambdatoast/elm.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
+Plug 'vim-ruby/vim-ruby'
+Plug 'kien/ctrlp.vim'
+Plug 'tpope/vim-rails'
+Plug 'slim-template/vim-slim'
+Plug 'thoughtbot/vim-rspec'
+Plug 'tpope/vim-unimpaired'
+Plug 'othree/html5.vim'
+Plug 'tpope/vim-eunuch'
+Plug 'mileszs/ack.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'isRuslan/vim-es6'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
+Plug 'lambdatoast/elm.vim'
 
-call vundle#end()
+call plug#end()
 filetype plugin indent on
 
 " Get that filetype stuff happening
