@@ -117,7 +117,7 @@ noremap <Leader>q :q<CR>
 nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
 nnoremap <Leader>r :call RunNearestSpec()<CR>
 nnoremap <Leader>l :call RunLastSpec()<CR>
-let g:rspec_command = "!SKIP_COVERAGE=true bundle exec bin/rspec -I . {spec}"
+let g:rspec_command = "!SKIP_COVERAGE=true bundle exec rspec -I . {spec}"
 
 " next/previous quickfix mappings
 noremap <Leader>n :cnext<CR>
