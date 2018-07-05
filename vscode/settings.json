@@ -3,14 +3,14 @@
     "vim.disableAnnoyingNeovimMessage": true,
     "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
-    "editor.tabSize": 4,
+    "editor.tabSize": 2,
     "editor.insertSpaces": true,
     "go.formatTool": "goimports",
     //"go.gopath": "/Users/danarrington/code/services/go",
     "go.toolsGopath": "/Users/danarrington/go",
     "go.inferGopath": true,
     "vim.leader": "<space>",
-    "vim.otherModesKeyBindingsNonRecursive": [
+    "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [
                 "<C-n>"
@@ -63,12 +63,38 @@
         {
             "before": [
                 "leader",
-                "t"
+                "r"
             ],
             "after": [],
             "commands": [
                 {
                     "command": "go.test.cursor",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "t"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "go.test.file",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "l"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "go.test.previous",
                     "args": []
                 }
             ]
@@ -115,8 +141,16 @@
         "suppressGitVersionWarning": false,
         "suppressLineUncommittedWarning": false,
         "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true,
         "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
     },
-    "workbench.panel.location": "bottom"
+    "workbench.panel.location": "bottom",
+    "gitlens.keymap": "alternate",
+    "[go]": {},
+    "explorer.confirmDragAndDrop": false,
+    "gitlens.historyExplorer.enabled": true,
+    "gitlens.codeLens.enabled": false,
+    "workbench.iconTheme": "material-icon-theme"
 }
