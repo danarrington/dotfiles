@@ -130,6 +130,9 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+" go to line with enter
+nnoremap <CR> G
+
 function! TogglePaste()
         if(&paste == 0)
                 set paste

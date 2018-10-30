@@ -43,7 +43,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.previousEditor",
+                    "command": "workbench.action.focusLeftGroup",
                     "args": []
                 }
             ]
@@ -55,7 +55,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.nextEditor",
+                    "command": "workbench.action.focusRightGroup",
                     "args": []
                 }
             ]
@@ -131,7 +131,7 @@
                 "g",
                 "v"
             ]
-        }
+        },
     ],
     "extensions.ignoreRecommendations": false,
     "gitlens.advanced.messages": {
@@ -152,5 +152,6 @@
     "explorer.confirmDragAndDrop": false,
     "gitlens.historyExplorer.enabled": true,
     "gitlens.codeLens.enabled": false,
-    "workbench.iconTheme": "material-icon-theme"
+    "workbench.iconTheme": "material-icon-theme",
+    "breadcrumbs.enabled": true
 }
