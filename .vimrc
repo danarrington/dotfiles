@@ -130,8 +130,8 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-" go to line with enter
-nnoremap <CR> G
+" go to line with enter unless in quickfix
+nnoremap <expr> <CR> &buftype ==# 'quickfix' ? "\<CR>" : 'G'
 
 function! TogglePaste()
         if(&paste == 0)
