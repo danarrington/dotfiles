@@ -3,3 +3,4 @@
         ec = config --global -e
         co = checkout
         st = status --short --branch
+        recent = branch --sort=-committerdate
