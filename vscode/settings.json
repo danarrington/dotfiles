@@ -1,5 +1,6 @@
 {
-    "window.zoomLevel": 1,
+    "clang-format.style": "{BasedOnStyle: google, IndentWidth: 4}",
+    "window.zoomLevel": 2,
     "vim.disableAnnoyingNeovimMessage": true,
     "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
@@ -132,6 +133,44 @@
                 "v"
             ]
         },
+        // Open Terminal
+        {
+            "before": [
+                "leader",
+                "`"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.toggleTerminal",
+                    "args": []
+                }
+            ]
+        },
+        // Attempt to implement goto line nubmer with enter
+        // Currently isn't possible: https://github.com/VSCodeVim/Vim/issues/3417
+        // {
+        //     "before": [
+        //         "<enter>"
+        //     ],
+        //     "after": [
+        //         "G",
+        //     ]
+        // },
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "leader",
+                "r"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "d",
+                "P"
+            ]
+        },
     ],
     "extensions.ignoreRecommendations": false,
     "gitlens.advanced.messages": {
@@ -153,5 +192,33 @@
     "gitlens.historyExplorer.enabled": true,
     "gitlens.codeLens.enabled": false,
     "workbench.iconTheme": "material-icon-theme",
-    "breadcrumbs.enabled": true
+    "breadcrumbs.enabled": true,
+    "go.testFlags": [
+        // "-v"
+    ],
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "editor.renderControlCharacters": false,
+    "workbench.activityBar.visible": false,
+    "workbench.sideBar.location": "left",
+    "editor.glyphMargin": false,
+    "editor.folding": false,
+    "editor.parameterHints.enabled": false,
+    "files.insertFinalNewline": true,
+    "go.lintTool": "revive",
+    "go.lintFlags": [
+        "-config",
+        "/Users/danarrington/go/revive.toml"
+    ],
+    "go.useLanguageServer": true,
+    //"vim.autoSwitchInputMethod.enable": true
+    /*---------- Bracket Pair Colorizer ---------- */
+    "bracket-pair-colorizer-2.colors": [
+        "White",
+        // "Orchid",
+        "Gold",
+        "LightSkyBlue"
+    ],
+    "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+    "editor.matchBrackets": false
 }
