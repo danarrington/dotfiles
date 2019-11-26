@@ -144,3 +144,6 @@ function! TogglePaste()
 endfunction
 
 map <leader>p :call TogglePaste()<CR>
+
+" Modelines can be a security risk and I don't use them
+set nomodeline
