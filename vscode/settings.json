@@ -1,178 +1,25 @@
 {
+    "[go]": {},
+    "bracket-pair-colorizer-2.colors": [
+        "White",
+        "Gold",
+        "LightSkyBlue"
+    ],
+    "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+    "breadcrumbs.enabled": true,
     "clang-format.style": "{BasedOnStyle: google, IndentWidth: 4}",
-    "window.zoomLevel": 2,
-    "vim.disableAnnoyingNeovimMessage": true,
+    "editor.folding": false,
     "editor.formatOnSave": true,
-    "editor.minimap.enabled": false,
-    "editor.tabSize": 2,
+    "editor.glyphMargin": false,
     "editor.insertSpaces": true,
-    "go.formatTool": "goimports",
-    //"go.gopath": "/Users/danarrington/code/services/go",
-    "go.toolsGopath": "/Users/danarrington/go",
-    "go.inferGopath": true,
-    "vim.leader": "<space>",
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<C-n>"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": ":nohl",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "s"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.files.save",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "<C-h>"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusLeftGroup",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "<C-l>"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusRightGroup",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "r"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "go.test.cursor",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "t"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "go.test.file",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "l"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "go.test.previous",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "<enter>"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "editor.action.goToDeclaration",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "S-Tab"
-            ],
-            "after": [
-                "<",
-                "g",
-                "v"
-            ]
-        },
-        {
-            "before": [
-                "Tab"
-            ],
-            "after": [
-                ">",
-                "g",
-                "v"
-            ]
-        },
-        // Open Terminal
-        {
-            "before": [
-                "leader",
-                "`"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.terminal.toggleTerminal",
-                    "args": []
-                }
-            ]
-        },
-        // Attempt to implement goto line nubmer with enter
-        // Currently isn't possible: https://github.com/VSCodeVim/Vim/issues/3417
-        // {
-        //     "before": [
-        //         "<enter>"
-        //     ],
-        //     "after": [
-        //         "G",
-        //     ]
-        // },
-    ],
-    "vim.visualModeKeyBindings": [
-        {
-            "before": [
-                "leader",
-                "r"
-            ],
-            "after": [
-                "\"",
-                "_",
-                "d",
-                "P"
-            ]
-        },
-    ],
+    "editor.matchBrackets": false,
+    "editor.minimap.enabled": false,
+    "editor.parameterHints.enabled": false,
+    "editor.renderControlCharacters": false,
+    "editor.tabSize": 2,
+    "explorer.confirmDragAndDrop": false,
     "extensions.ignoreRecommendations": false,
+    "files.insertFinalNewline": true,
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
@@ -185,40 +32,176 @@
         "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
     },
-    "workbench.panel.location": "bottom",
-    "gitlens.keymap": "alternate",
-    "[go]": {},
-    "explorer.confirmDragAndDrop": false,
-    "gitlens.historyExplorer.enabled": true,
     "gitlens.codeLens.enabled": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "breadcrumbs.enabled": true,
-    "go.testFlags": [
-        // "-v"
-    ],
+    "gitlens.historyExplorer.enabled": true,
+    "gitlens.keymap": "alternate",
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
-    "editor.renderControlCharacters": false,
-    "workbench.activityBar.visible": false,
-    "workbench.sideBar.location": "left",
-    "editor.glyphMargin": false,
-    "editor.folding": false,
-    "editor.parameterHints.enabled": false,
-    "files.insertFinalNewline": true,
-    "go.lintTool": "revive",
+    "go.formatTool": "goimports",
+    "go.inferGopath": true,
     "go.lintFlags": [
         "-config",
         "/Users/danarrington/go/revive.toml"
     ],
+    "go.lintTool": "revive",
+    "go.testFlags": [],
+    "go.toolsGopath": "/Users/danarrington/go",
     "go.useLanguageServer": true,
-    //"vim.autoSwitchInputMethod.enable": true
-    /*---------- Bracket Pair Colorizer ---------- */
-    "bracket-pair-colorizer-2.colors": [
-        "White",
-        // "Orchid",
-        "Gold",
-        "LightSkyBlue"
+    "vim.disableAnnoyingNeovimMessage": true,
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "after": [],
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                {
+                    "args": [],
+                    "command": ":nohl"
+                }
+            ]
+        },
+        {
+            "after": [],
+            "before": [
+                "leader",
+                "s"
+            ],
+            "commands": [
+                {
+                    "args": [],
+                    "command": "workbench.action.files.save"
+                }
+            ]
+        },
+        {
+            "after": [],
+            "before": [
+                "<C-h>"
+            ],
+            "commands": [
+                {
+                    "args": [],
+                    "command": "workbench.action.focusLeftGroup"
+                }
+            ]
+        },
+        {
+            "after": [],
+            "before": [
+                "<C-l>"
+            ],
+            "commands": [
+                {
+                    "args": [],
+                    "command": "workbench.action.focusRightGroup"
+                }
+            ]
+        },
+        {
+            "after": [],
+            "before": [
+                "leader",
+                "r"
+            ],
+            "commands": [
+                {
+                    "args": [],
+                    "command": "go.test.cursor"
+                }
+            ]
+        },
+        {
+            "after": [],
+            "before": [
+                "leader",
+                "t"
+            ],
+            "commands": [
+                {
+                    "args": [],
+                    "command": "go.test.file"
+                }
+            ]
+        },
+        {
+            "after": [],
+            "before": [
+                "leader",
+                "l"
+            ],
+            "commands": [
+                {
+                    "args": [],
+                    "command": "go.test.previous"
+                }
+            ]
+        },
+        {
+            "after": [],
+            "before": [
+                "leader",
+                "<enter>"
+            ],
+            "commands": [
+                {
+                    "args": [],
+                    "command": "editor.action.goToDeclaration"
+                }
+            ]
+        },
+        {
+            "after": [
+                "<",
+                "g",
+                "v"
+            ],
+            "before": [
+                "S-Tab"
+            ]
+        },
+        {
+            "after": [
+                ">",
+                "g",
+                "v"
+            ],
+            "before": [
+                "Tab"
+            ]
+        },
+        {
+            "after": [],
+            "before": [
+                "leader",
+                "`"
+            ],
+            "commands": [
+                {
+                    "args": [],
+                    "command": "workbench.action.terminal.toggleTerminal"
+                }
+            ]
+        }
     ],
-    "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
-    "editor.matchBrackets": false
+    "vim.visualModeKeyBindings": [
+        {
+            "after": [
+                "\"",
+                "_",
+                "d",
+                "P"
+            ],
+            "before": [
+                "leader",
+                "r"
+            ]
+        }
+    ],
+    "window.zoomLevel": 2,
+    "workbench.activityBar.visible": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.panel.location": "bottom",
+    "workbench.sideBar.location": "left"
 }
