@@ -6,6 +6,7 @@ echo $DIR
 # symlink vscode settings
 ln -s $DIR/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -s $DIR/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+ln -s $DIR/revive.toml ~/go/revive.toml
 
 # setup vim
 ln -s $DIR/.vimrc ~/.vimrc
