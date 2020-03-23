@@ -15,6 +15,10 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
 
+# git aliases
+ln -s $DIR/.git_aliases ~/.git_aliases
+git config --global include.path "~/.git_aliases"
+
 # TODO
 # .git_aliases
 # .ackrc (install ack?)

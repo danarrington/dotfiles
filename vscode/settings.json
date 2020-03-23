@@ -41,11 +41,11 @@
     "go.inferGopath": true,
     "go.lintFlags": [
         "-config",
-        "/Users/danarrington/go/revive.toml"
+        "/Users/dan/go/revive.toml"
     ],
     "go.lintTool": "revive",
     "go.testFlags": [],
-    "go.toolsGopath": "/Users/danarrington/go",
+    "go.toolsGopath": "/Users/dan/go",
     "go.useLanguageServer": true,
     "vim.disableAnnoyingNeovimMessage": true,
     "vim.leader": "<space>",
@@ -203,5 +203,6 @@
     "workbench.activityBar.visible": false,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.panel.location": "bottom",
-    "workbench.sideBar.location": "left"
+    "workbench.sideBar.location": "left",
+    "eslint.format.enable": true
 }
