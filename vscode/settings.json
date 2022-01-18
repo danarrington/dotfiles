@@ -9,10 +9,9 @@
    **/
   "editor.minimap.enabled": false,
   "editor.renderIndentGuides": false,
-  // "editor.lineNumbers":"off",
+  "editor.lineNumbers": "on",
   "workbench.activityBar.visible": false,
   "workbench.sideBar.location": "left",
-  "workbench.statusBar.visible": false,
 
   /**
    * Silence The Noise
