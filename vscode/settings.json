@@ -10,7 +10,6 @@
   "editor.minimap.enabled": false,
   "editor.renderIndentGuides": false,
   "editor.lineNumbers": "on",
-  "workbench.activityBar.visible": false,
   "workbench.sideBar.location": "left",
 
   /**
@@ -56,7 +55,11 @@
   "editor.rulers": [100],
   "workbench.colorTheme": "Dracula Pro (Van Helsing)",
   "workbench.colorCustomizations": {
-    "editorLineNumber.foreground": "#444"
+    "editorLineNumber.foreground": "#444",
+    "editorBracketHighlight.foreground1": "#fff",
+    "editorBracketHighlight.foreground2": "#FFDF00",
+    "editorBracketHighlight.foreground3": "#87CEFA",
+    "editorBracketHighlight.foreground4": "#9370DB"
   },
 
   /**
@@ -74,13 +77,6 @@
    * Legacy Settings
    **/
   "[go]": {},
-  "bracket-pair-colorizer-2.colors": [
-    "White",
-    "Gold",
-    "LightSkyBlue",
-    "Orchid"
-  ],
-  "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
   "clang-format.style": "{BasedOnStyle: google, IndentWidth: 4}",
   "editor.folding": false,
   "editor.formatOnSave": true,
@@ -260,9 +256,11 @@
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "git.confirmSync": false,
   "git.autofetch": true,
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active"
+  /**
+   * / Legacy Settings
+   * Anything below there has been added somewhat recently
+   **/
 }
-/**
- * / Legacy Settings
- * Anything below there has been added somewhat recently
- **/
